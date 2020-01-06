@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #00818a;
+}
+h1{
+    margin: 0;
+    font-size: 35px;
+    
+}
+
+.item1{
+    background-color: #ff7315;
+}
+
+.item2{
+    background-color: #f4f4f4;
+}
+
+.item3{
+    background-color: #272121;
+}
+.item4{
+    background-color: #a0c334;
+}
+.item5{
+    background-color:  #ff0000;
+}
+.item6{
+    background-color: #f4f4f4;
+}
+
+
+.container {
+  display: grid ;    
+
+
+
+
+
+    
+/*
+grid-template-columns
+grid-template-rows
+*/
+    
+    
+/*  dividing the grid in colums*/
+    grid-template-columns: [first] 16.6% [line2] 16.6% [line3] 16.6% [col4-start] 16.6% [five] 16.6% [six] 16.6%[end];
+
+/* Method 2 using only values*/
+/*    grid-template-columns: 40px 50px auto 50px 40px;*/
+
+    
+    
+/*  dividing the grid in rows  */    
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+    
+    /*  grid-template-rows: 25% 100px auto;*/
+}
+
+.item1{
+  grid-column-start: 1;
+
+  grid-column-end: 4;
+/*
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+*/
+*/
+}
+
+.item2{
+  grid-column-start: 4;
+
+  grid-column-end: 7;
+}
+.item3{
+  grid-column-start: 1;
+
+  grid-column-end: 3;
+}
+.item4{
+  grid-column-start: 3;
+
+  grid-column-end: 5;
+}
+.item5{
+  grid-column-start: 5;
+
+  grid-column-end: 7;
+}
+.item6{
+  grid-column-start: 1;
+
+  grid-column-end: 7;
+}
