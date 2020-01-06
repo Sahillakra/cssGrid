@@ -63,10 +63,8 @@ grid-template-rows
   grid-column-start: 1;
 
   grid-column-end: 4;
-/*
   grid-row-start: row1-start;
   grid-row-end: 3;
-*/
 */
 }
 
@@ -76,17 +74,20 @@ grid-template-rows
   grid-column-end: 7;
 }
 .item3{
-  grid-column-start: 1;
+  grid-column-start: 4;
 
-  grid-column-end: 3;
+  grid-column-end: 7;
+    grid-row-start: row1-end;
+
 }
 .item4{
-  grid-column-start: 3;
 
-  grid-column-end: 5;
+   grid-column-end: 4;
+  grid-column-start: 1;
+
 }
 .item5{
-  grid-column-start: 5;
+  grid-column-start: 4;
 
   grid-column-end: 7;
 }
